@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "f837c16a-a110-4547-8e39-6335c3924268",
+		"name": "Spacecraft Rental",
+		"description": "Space Objects API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "32689579-f837c16a-a110-4547-8e39-6335c3924268"
+	},
+	"item": [
+		{
+			"name": "spacecrafts",
+			"item": [
+				{
+					"name": "{spacecraftId}",
+					"item": [
+						{
+							"name": "Read a spacecraft",
+							"id": "a7bfd579-5f44-4371-9954-09cbb241b263",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"spacecrafts",
+										":spacecraftId"
+									],
+									"variable": [
+										{
+											"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
+											"key": "spacecraftId",
+											"value": "<string>",
+											"description": "(Required) The unique identifier of the spacecraft"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "3a53f302-e8ec-4e7a-8097-fd04bec8860d",
+									"name": "The spacecraft corresponding to the provided `spacecraftId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"variable": [
+												{
+													"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
+													"key": "spacecraftId",
+													"value": "<string>",
+													"description": "(Required) The unique identifier of the spacecraft"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"<string>\",\n  \"type\": \"satellite\",\n  \"description\": \"<string>\"\n}"
+								},
+								{
+									"id": "bcd820be-fe06-4079-bbfe-ed630896e11c",
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"variable": [
+												{
+													"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
+													"key": "spacecraftId",
+													"value": "<string>",
+													"description": "(Required) The unique identifier of the spacecraft"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"<string>\"\n}"
+								},
+								{
+									"id": "62e6b865-4bc8-4f7d-b6cf-ae59667eda66",
+									"name": "No spacecraft found for the provided `spacecraftId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"variable": [
+												{
+													"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
+													"key": "spacecraftId",
+													"value": "<string>",
+													"description": "(Required) The unique identifier of the spacecraft"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"sed do Lor\"\n}"
+								}
+							]
+						}
+					],
+					"id": "d159c9c2-f7b6-48aa-a76d-19cb393b698e"
+				}
+			],
+			"id": "ca4c9079-04e6-462b-950d-340cc453a868"
+		},
+		{
+			"name": "planets",
+			"item": [
+				{
+					"name": "{planetId}",
+					"item": [
+						{
+							"name": "Read a planet",
+							"id": "1de75349-df69-4156-adf7-ce1d62634aa0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/planets/:planetId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"planets",
+										":planetId"
+									],
+									"variable": [
+										{
+											"id": "555c4390-6ee6-44f1-9751-17423111076f",
+											"key": "planetId",
+											"value": "<string>",
+											"description": "(Required) The unique identifier of the planet"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "cb8072cb-6e8d-4a6e-a133-ebff8d96bc7f",
+									"name": "The plamet corresponding to the provided `planetId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/planets/:planetId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"planets",
+												":planetId"
+											],
+											"variable": [
+												{
+													"id": "555c4390-6ee6-44f1-9751-17423111076f",
+													"key": "planetId",
+													"value": "<string>",
+													"description": "(Required) The unique identifier of the planet"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": {\n    \"value\": \"reference #/components/schemas/planetId not found in the OpenAPI spec\"\n  },\n  \"name\": \"<string>\",\n  \"type\": \"super-earth\",\n  \"description\": \"<string>\"\n}"
+								},
+								{
+									"id": "a39079b6-e407-4def-8f08-ba83100bc5f2",
+									"name": "No planet found for the provided `planetId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/planets/:planetId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"planets",
+												":planetId"
+											],
+											"variable": [
+												{
+													"id": "555c4390-6ee6-44f1-9751-17423111076f",
+													"key": "planetId",
+													"value": "<string>",
+													"description": "(Required) The unique identifier of the planet"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"<string>\"\n}"
+								},
+								{
+									"id": "2776b5a0-8064-469c-acde-38577ef83463",
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/planets/:planetId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"planets",
+												":planetId"
+											],
+											"variable": [
+												{
+													"id": "555c4390-6ee6-44f1-9751-17423111076f",
+													"key": "planetId",
+													"value": "<string>",
+													"description": "(Required) The unique identifier of the planet"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"<string>\"\n}"
+								}
+							]
+						}
+					],
+					"id": "32e40355-3b8e-4d33-ae90-08f323c94af0"
+				}
+			],
+			"id": "6670b9d4-6757-4e3d-8326-c975f2cd44c0"
+		}
+	],
+	"variable": [
+		{
+			"id": "6ac95fe1-2de2-4d61-933d-912300a7861a",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
