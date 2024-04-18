@@ -38,7 +38,6 @@
 									],
 									"variable": [
 										{
-											"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
 											"key": "spacecraftId",
 											"value": "<string>",
 											"description": "(Required) The unique identifier of the spacecraft"
@@ -69,7 +68,6 @@
 											],
 											"variable": [
 												{
-													"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
 													"key": "spacecraftId",
 													"value": "<string>",
 													"description": "(Required) The unique identifier of the spacecraft"
@@ -111,7 +109,6 @@
 											],
 											"variable": [
 												{
-													"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
 													"key": "spacecraftId",
 													"value": "<string>",
 													"description": "(Required) The unique identifier of the spacecraft"
@@ -153,7 +150,6 @@
 											],
 											"variable": [
 												{
-													"id": "83718b59-6d17-4767-a739-71c6f59d3c6c",
 													"key": "spacecraftId",
 													"value": "<string>",
 													"description": "(Required) The unique identifier of the spacecraft"
@@ -212,7 +208,6 @@
 									],
 									"variable": [
 										{
-											"id": "555c4390-6ee6-44f1-9751-17423111076f",
 											"key": "planetId",
 											"value": "<string>",
 											"description": "(Required) The unique identifier of the planet"
@@ -243,7 +238,6 @@
 											],
 											"variable": [
 												{
-													"id": "555c4390-6ee6-44f1-9751-17423111076f",
 													"key": "planetId",
 													"value": "<string>",
 													"description": "(Required) The unique identifier of the planet"
@@ -285,7 +279,6 @@
 											],
 											"variable": [
 												{
-													"id": "555c4390-6ee6-44f1-9751-17423111076f",
 													"key": "planetId",
 													"value": "<string>",
 													"description": "(Required) The unique identifier of the planet"
@@ -327,7 +320,6 @@
 											],
 											"variable": [
 												{
-													"id": "555c4390-6ee6-44f1-9751-17423111076f",
 													"key": "planetId",
 													"value": "<string>",
 													"description": "(Required) The unique identifier of the planet"
@@ -356,11 +348,33 @@
 			"id": "6670b9d4-6757-4e3d-8326-c975f2cd44c0"
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0fb1eb42-3170-439f-b966-8dd28cf0aa8b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "68f6a4de-27b1-4047-86e9-a579460432e6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "6ac95fe1-2de2-4d61-933d-912300a7861a",
+			"id": "3afebe8e-1f91-4e03-ae45-5b414e2ab8b2",
 			"key": "baseUrl",
-			"value": "/"
+			"value": "https://6366b8a6-d6a6-446b-9236-fbb8688437d3.mock.pstmn.io"
 		}
 	]
 }
